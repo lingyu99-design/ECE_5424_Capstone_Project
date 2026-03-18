@@ -14,7 +14,7 @@ This repository contains the current milestone work for hand-load estimation and
 project-root/
 ├── README.md
 └── scripts/
-    ├── data_processing.py
-    ├── rf_baseline_loso.py
-    └── bias_analysis.py
+    ├── Data Process-1.ipynb
+    ├── RF_Model_and_Analysis.ipynb
+    └── RF_Regressor_Classifier.ipynb
 ```
