@@ -36,6 +36,4 @@ project-root/
 ├── 07_dvae_emg.ipynb # EMG DVAE
 │
 │ # Cross-model fairness analysis
-└── 08_fairness_analysis.ipynb # SP, PRD/NRD, DI, BGL across all four models
-└── <run-tag>/ : summary.json, test_outputs.npz, *.pt, history.csv
-```
+└── 08_fairness_analysis.ipynb # SP, PRD/NRD, DI, BGL across all four models```
