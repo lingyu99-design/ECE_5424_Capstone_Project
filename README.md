@@ -15,25 +15,26 @@ Fairness-aware hand-load estimation from wearable biomechanical sensors. The pro
 project-root/
 ├── README.md
 ├── requirements.txt
-├── scripts/ # Phase 1: RF baseline (EMG)
+├── RF/ # Phase 1: RF baseline (EMG)
 │ ├── Data Process-1.ipynb
 │ ├── RF_Model_and_Analysis.ipynb
 │ └── RF_Regressor_Classifier.ipynb
 └── VAE/ # Phase 2: VAE / DVAE
-│
-│ # Preprocessing (run first)
-├── 00_filter_emg.ipynb # EMG bandpass + notch filtering
-├── 01_segment_lifts.ipynb # cycle segmentation, NaN cleanup
-│
-│ # VAE regressor (one per modality)
-├── 02_vae_imu.ipynb # IMU VAE — pilot (reconstruction only)
-├── 03_vae_emg.ipynb # EMG VAE — pilot (reconstruction only)
-├── 04_vae_imu_reg.ipynb # IMU VAE regressor (final)
-├── 05_vae_emg_reg.ipynb # EMG VAE regressor (final)
-│
-│ # DVAE — adversarial sex-debiasing
-├── 06_dvae_imu.ipynb # IMU DVAE
-├── 07_dvae_emg.ipynb # EMG DVAE
-│
-│ # Cross-model fairness analysis
-└── 08_fairness_analysis.ipynb # SP, PRD/NRD, DI, BGL across all four models```
+  │
+  │ # Preprocessing (run first)
+  ├── 00_filter_emg.ipynb # EMG bandpass + notch filtering
+  ├── 01_segment_lifts.ipynb # cycle segmentation, NaN cleanup
+  │
+  │ # VAE regressor (one per modality)
+  ├── 02_vae_imu.ipynb # IMU VAE — pilot (reconstruction only)
+  ├── 03_vae_emg.ipynb # EMG VAE — pilot (reconstruction only)
+  ├── 04_vae_imu_reg.ipynb # IMU VAE regressor (final)
+  ├── 05_vae_emg_reg.ipynb # EMG VAE regressor (final)
+  │
+  │ # DVAE — adversarial sex-debiasing
+  ├── 06_dvae_imu.ipynb # IMU DVAE
+  ├── 07_dvae_emg.ipynb # EMG DVAE
+  │
+  │ # Cross-model fairness analysis
+  └── 08_fairness_analysis.ipynb # SP, PRD/NRD, DI, BGL across all four models
+```
